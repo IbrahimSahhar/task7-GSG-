@@ -1,0 +1,76 @@
+.blogs__card {
+    display: flex;
+    flex-direction: column;
+    background: rgba(16, 20, 24, 0.7);
+}
+
+.blogs__card img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.blogs__card__content {
+    padding: 40px;
+}
+
+.blogs__card .title {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    text-transform: capitalize;
+    color: var(--white-1);
+    margin-bottom: 17px;
+}
+
+.blogs__card .text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    text-transform: capitalize;
+    color: var(--white-1);
+    margin-bottom: 25px;
+}
+
+.blogs__card button {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.13em;
+    text-transform: capitalize;
+    color: #FFFFFC;
+    padding: 4px;
+    position: relative;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.blogs__card button::after {
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: #FFCE6D;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.1s all ease-in-out ;
+}
+
+.blogs__card button:hover::after {
+    content: "Read more";
+    height: 100%;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.13em;
+    text-transform: capitalize;
+    color: var(--white-1);
+    background-color: var(--brown);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

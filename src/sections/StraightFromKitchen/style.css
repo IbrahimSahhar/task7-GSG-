@@ -1,0 +1,17 @@
+.straight-from-kitchen {
+    padding: 50px 0;
+}
+
+.straight-from-kitchen__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 140px;
+    row-gap: 30px;
+}
+
+@media screen and (max-width:1000px) {
+
+    .straight-from-kitchen__content {
+        grid-template-columns: 1fr;
+    }
+}

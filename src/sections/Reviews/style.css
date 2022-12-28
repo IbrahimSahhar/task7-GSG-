@@ -1,0 +1,19 @@
+.reviews {
+    padding: 70px 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.reviews__container {
+    display: flex;
+    width: 150vw;
+    transform: translateX(-25vw);
+    justify-content: space-between;
+    gap: 100px;
+}
+
+@media screen and (max-width:900px) {
+    .reviews__container {
+        transform: translateX(10vw);
+    }
+}
